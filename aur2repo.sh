@@ -25,7 +25,7 @@ find . -type f -name "*debug*" -delete
 
 # Create repository directory
 mkdir -p "$repo_name"
-mkdir -p "$arch"
+mkdir -p "$repo_name"/"$arch"
 
 # Copy packages to repository directory
 find . -type f -name "*.zst" -exec cp {} "$repo_name"/"$arch" \;
