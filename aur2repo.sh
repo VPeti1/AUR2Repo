@@ -28,7 +28,7 @@ mkdir -p "$repo_name"
 mkdir -p "$repo_name"/"$arch"
 
 # Copy packages to repository directory
-find . -type f -name "*.zst" -exec cp {} "$repo_name"/"$arch" \;
+find . -type f -name "*pkg.tar*" -exec cp {} "$repo_name"/"$arch" \;
 
 cd "$repo_name"
 
